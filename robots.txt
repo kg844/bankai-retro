@@ -1,0 +1,6 @@
+# Bankai Retro: allow all search engines to crawl the whole site.
+User-agent: *
+Allow: /
+
+# Replace the address below with your live site address after deploying.
+Sitemap: https://bankairetro.netlify.app/sitemap.xml
