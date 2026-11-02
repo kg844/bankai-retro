@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bankai Retro | Authentic Retro Football Kits in South Africa</title>
+  <meta name="description" content="Shop authentic retro and vintage football kits in South Africa. Kaizer Chiefs, Orlando Pirates, AC Milan and more, sold from Johannesburg.">
+  <meta name="keywords" content="retro football kits South Africa, vintage football shirts Johannesburg, Kaizer Chiefs retro kit, Orlando Pirates retro shirt, classic football jerseys">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:site_name" content="Bankai Retro">
+  <meta property="og:title" content="Bankai Retro | Authentic Retro Football Kits in South Africa">
+  <meta property="og:description" content="Shop authentic retro and vintage football kits in South Africa. Kaizer Chiefs, Orlando Pirates, AC Milan and more, sold from Johannesburg.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Inter:wght@400;500&amp;display=swap">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Bankai Retro",
+    "description": "Authentic retro and vintage football kits sold from Johannesburg, South Africa.",
+    "email": "hello@bankairetro.co.za",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "73 Juta Street",
+      "addressLocality": "Braamfontein, Johannesburg",
+      "addressCountry": "ZA"
+    },
+    "openingHours": "Sa 09:00-15:00"
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="home">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header: contains the logo and the site-wide navigation menu.
+       On small screens js/script.js turns the menu into a toggle button. -->
+  <header>
+    <div class="logo">BANKAI RETRO</div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section: bold banner introducing the brand -->
+  <section class="hero">
+    <h1>Wear the Heritage</h1>
+    <p>Authentic retro football kits, sourced from clubs across South Africa and the world.</p>
+    <a href="products.html" class="btn">Shop the Collection</a>
+  </section>
+
+  <main id="main-content">
+    <!-- Featured kits are loaded from data/products.json by js/script.js -->
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Kits</h2>
+      <div class="product-grid" id="featured-grid" data-static>
+        <!-- Kit cards are written in the HTML so search engines see the images, file names and alt text. js/script.js reads data/products.json and rebuilds them for search, filters and the lightbox. -->
+        <article class="product-card is-visible" data-club="Kaizer Chiefs" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of Kaizer Chiefs 1996 Home">
+            <img src="images/kaizer-chiefs-1996-home-retro-kit.jpg" alt="Kaizer Chiefs 1996 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>Kaizer Chiefs 1996 Home</h3>
+          <p class="card-blurb">Classic Amakhosi home shirt.</p>
+          <p class="card-meta"><span>Size M | R650</span><span class="badge badge-in">In stock</span></p>
+          <a class="card-link" href="enquiry.html?kit=kaizer-chiefs-1996-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="Orlando Pirates" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of Orlando Pirates 1995 Home">
+            <img src="images/orlando-pirates-1995-home-retro-kit.jpg" alt="Orlando Pirates 1995 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>Orlando Pirates 1995 Home</h3>
+          <p class="card-blurb">Vintage Buccaneers black and white.</p>
+          <p class="card-meta"><span>Size L | R650</span><span class="badge badge-low">Last one</span></p>
+          <a class="card-link" href="enquiry.html?kit=orlando-pirates-1995-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="AC Milan" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of AC Milan 1994 Home">
+            <img src="images/ac-milan-1994-home-retro-kit.jpg" alt="AC Milan 1994 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>AC Milan 1994 Home</h3>
+          <p class="card-blurb">Iconic Rossoneri European kit.</p>
+          <p class="card-meta"><span>Size M | R850</span><span class="badge badge-low">Last one</span></p>
+          <a class="card-link" href="enquiry.html?kit=ac-milan-1994-home">Enquire about this kit</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brief intro / call to action -->
+    <section aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Bankai Retro</h2>
+      <p>Every kit tells a story. We hunt down authentic, hard-to-find vintage football shirts so you can
+        wear a piece of football history, not a reprint. From local legends to European
+        giants, if it mattered on the pitch, we're tracking it down.</p>
+      <p>Want to know more about us? Read <a href="about.html">our story</a>, browse
+        <a href="products.html">all retro kits by club and era</a>, or
+        <a href="enquiry.html">ask about a custom order</a>. You can also
+        <a href="contact.html">find our Johannesburg market stalls</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bankai Retro. Johannesburg, South Africa.</p>
+  </footer>
+
+</body>
+</html>

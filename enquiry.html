@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Enquiry | Price and Availability | Bankai Retro</title>
+  <meta name="description" content="Ask Bankai Retro about the price and availability of a retro football kit, request a size, or ask us to find a shirt that isn't listed.">
+  <meta name="keywords" content="retro football kit enquiry, custom football shirt order South Africa, kit price and availability, football shirt sizing">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:site_name" content="Bankai Retro">
+  <meta property="og:title" content="Kit Enquiry | Price and Availability | Bankai Retro">
+  <meta property="og:description" content="Ask Bankai Retro about the price and availability of a retro football kit, request a size, or ask us to find a shirt that isn't listed.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Inter:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="enquiry">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header: contains the logo and the site-wide navigation menu.
+       On small screens js/script.js turns the menu into a toggle button. -->
+  <header>
+    <div class="logo">BANKAI RETRO</div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="enquiry-heading">
+      <h1 id="enquiry-heading">Kit Enquiries: Price &amp; Availability</h1>
+      <p>Pick a kit and size and we'll show you the cost and whether it's in stock straight away.
+        Shirt not listed? Choose "Other" and tell us what you're after. You can see everything we have on the
+        <a href="products.html">products page</a>.</p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading" class="visually-hidden">Enquiry form</h2>
+      <form id="enquiry-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" name="name" required minlength="2" maxlength="60" pattern="[A-Za-z\u00C0-\u024F' \-]+" autocomplete="name" data-label="Full name" data-pattern-message="Use letters, spaces, hyphens and apostrophes only." aria-describedby="name-error">
+          <p class="field-error" id="name-error"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" type="email" name="email" required maxlength="100" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" autocomplete="email" data-label="Email address" data-pattern-message="Enter a valid email address, e.g. name@example.com." aria-describedby="email-error">
+          <p class="field-error" id="email-error"></p>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number (optional)</label>
+          <input id="phone" type="tel" name="phone" maxlength="20" pattern="(\+27|0)[0-9 ]{9,12}" autocomplete="tel" data-label="Phone number" data-pattern-message="Enter a valid South African number, e.g. 082 123 4567 or +27 82 123 4567." aria-describedby="phone-error">
+          <p class="field-error" id="phone-error"></p>
+        </div>
+        <div class="field">
+          <label for="kit">Which kit?</label>
+          <select id="kit" name="kit" required data-label="Kit" aria-describedby="kit-error"><option value="">Choose a kit</option></select>
+          <p class="field-error" id="kit-error"></p>
+        </div>
+        <div class="field">
+          <label for="size">Size</label>
+          <select id="size" name="size" required data-label="Size" aria-describedby="size-error"><option value="">Choose a size</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+          <p class="field-error" id="size-error"></p>
+        </div>
+        <div class="field">
+          <label for="quantity">Quantity</label>
+          <p class="field-hint" id="quantity-hint">Up to 5 per enquiry.</p>
+          <input id="quantity" type="number" name="quantity" value="1" min="1" max="5" step="1" required data-label="Quantity" data-range-message="Quantity must be a whole number from 1 to 5." aria-describedby="quantity-hint quantity-error">
+          <p class="field-error" id="quantity-error"></p>
+        </div>
+        <div class="field">
+          <label for="enquiry-type">Enquiry type</label>
+          <select id="enquiry-type" name="enquiry-type" required data-label="Enquiry type" aria-describedby="enquiry-type-error"><option value="price">Price and availability</option><option value="custom">Custom order</option><option value="sizing">Sizing question</option><option value="restock">Out-of-stock request</option></select>
+          <p class="field-error" id="enquiry-type-error"></p>
+        </div>
+        <div class="field">
+          <label for="details">Details (optional)</label>
+          <textarea id="details" name="details" rows="4" maxlength="500" placeholder="Anything else we should know?" data-label="Details" aria-describedby="details-error"></textarea>
+          <p class="field-error" id="details-error"></p>
+        </div>
+        <button type="submit" class="btn">Send Enquiry</button>
+      </form>
+
+      <div id="enquiry-response" class="response-region" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <h3 class="accordion-item-heading">
+          <button type="button" class="accordion-trigger" aria-controls="faq-1" aria-expanded="true">Are your kits authentic?</button>
+        </h3>
+        <div class="accordion-panel is-open" id="faq-1"><div><p>Yes. We source genuine retro and vintage shirts rather than reprints, and we tell you the condition and size of every kit before you buy.</p></div></div>
+
+        <h3 class="accordion-item-heading">
+          <button type="button" class="accordion-trigger" aria-controls="faq-2" aria-expanded="true">How do I know which size to pick?</button>
+        </h3>
+        <div class="accordion-panel is-open" id="faq-2"><div><p>Vintage shirts often fit differently to modern ones. Choose "Sizing question" in the form above and we'll send you measurements for the kit you like.</p></div></div>
+
+        <h3 class="accordion-item-heading">
+          <button type="button" class="accordion-trigger" aria-controls="faq-3" aria-expanded="true">What if my kit is sold out?</button>
+        </h3>
+        <div class="accordion-panel is-open" id="faq-3"><div><p>Send an "Out-of-stock request" and we'll add you to the waiting list and keep an eye out for another one.</p></div></div>
+
+        <h3 class="accordion-item-heading">
+          <button type="button" class="accordion-trigger" aria-controls="faq-4" aria-expanded="true">Where can I collect my order?</button>
+        </h3>
+        <div class="accordion-panel is-open" id="faq-4"><div><p>Collect for free at our Braamfontein market stall or at a matchday pop-up. See the <a href="contact.html">contact page</a> for locations and times.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bankai Retro. Johannesburg, South Africa.</p>
+  </footer>
+
+</body>
+</html>

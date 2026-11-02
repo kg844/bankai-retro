@@ -1,0 +1,16 @@
+{
+  "products": [
+    { "id": "kaizer-chiefs-1996-home", "club": "Kaizer Chiefs", "season": 1996, "era": "1990s", "name": "Kaizer Chiefs 1996 Home", "size": "M", "price": 650, "stock": 2, "featured": true,
+      "image": "images/kaizer-chiefs-1996-home-retro-kit.jpg", "alt": "Kaizer Chiefs 1996 home retro football kit", "blurb": "Classic Amakhosi home shirt." },
+    { "id": "orlando-pirates-1995-home", "club": "Orlando Pirates", "season": 1995, "era": "1990s", "name": "Orlando Pirates 1995 Home", "size": "L", "price": 650, "stock": 1, "featured": true,
+      "image": "images/orlando-pirates-1995-home-retro-kit.jpg", "alt": "Orlando Pirates 1995 home retro football kit", "blurb": "Vintage Buccaneers black and white." },
+    { "id": "ac-milan-1994-home", "club": "AC Milan", "season": 1994, "era": "1990s", "name": "AC Milan 1994 Home", "size": "M", "price": 850, "stock": 1, "featured": true,
+      "image": "images/ac-milan-1994-home-retro-kit.jpg", "alt": "AC Milan 1994 home retro football kit", "blurb": "Iconic Rossoneri European kit." },
+    { "id": "manchester-united-2008-home", "club": "Manchester United", "season": 2008, "era": "2000s", "name": "Manchester United 2008 Home", "size": "L", "price": 850, "stock": 0, "featured": false,
+      "image": "images/manchester-united-2008-home-retro-kit.jpg", "alt": "Manchester United 2008 home retro football kit", "blurb": "Champions League winning-season shirt." },
+    { "id": "mamelodi-sundowns-2003-home", "club": "Mamelodi Sundowns", "season": 2003, "era": "2000s", "name": "Mamelodi Sundowns 2003 Home", "size": "S", "price": 650, "stock": 3, "featured": false,
+      "image": "images/mamelodi-sundowns-2003-home-retro-kit.jpg", "alt": "Mamelodi Sundowns 2003 home retro football kit", "blurb": "Masandawana yellow and blue." },
+    { "id": "barcelona-1992-home", "club": "Barcelona", "season": 1992, "era": "1990s", "name": "Barcelona 1992 Home", "size": "M", "price": 900, "stock": 1, "featured": false,
+      "image": "images/barcelona-1992-home-retro-kit.jpg", "alt": "Barcelona 1992 home retro football kit", "blurb": "Dream Team era blaugrana." }
+  ]
+}

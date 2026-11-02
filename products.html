@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Football Kits for Sale by Club and Era | Bankai Retro</title>
+  <meta name="description" content="Browse authentic retro football kits by club and era. Search, filter and sort Kaizer Chiefs, Orlando Pirates, AC Milan, Barcelona and more.">
+  <meta name="keywords" content="buy retro football kits, vintage football shirts for sale, 90s football kits, Kaizer Chiefs 1996 kit, AC Milan 1994 shirt, Barcelona 1992 shirt">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:site_name" content="Bankai Retro">
+  <meta property="og:title" content="Retro Football Kits for Sale by Club and Era | Bankai Retro">
+  <meta property="og:description" content="Browse authentic retro football kits by club and era. Search, filter and sort Kaizer Chiefs, Orlando Pirates, AC Milan, Barcelona and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Inter:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="products">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header: contains the logo and the site-wide navigation menu.
+       On small screens js/script.js turns the menu into a toggle button. -->
+  <header>
+    <div class="logo">BANKAI RETRO</div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="shop-heading">
+      <h1 id="shop-heading">Shop Retro Football Kits by Club &amp; Era</h1>
+      <p>Search the collection, filter by club or era, and sort by price or year. Click a kit photo
+        to see it larger. Can't see the shirt you want? <a href="enquiry.html">Ask us to find it</a>.</p>
+
+      <form id="filter-form" class="filter-bar" role="search" aria-label="Search and filter kits">
+        <div class="field">
+          <label for="search">Search kits</label>
+          <input type="search" id="search" placeholder="e.g. Chiefs or 1996" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="filter-club">Club</label>
+          <select id="filter-club"><option value="">All clubs</option></select>
+        </div>
+        <div class="field">
+          <label for="filter-era">Era</label>
+          <select id="filter-era"><option value="">All eras</option></select>
+        </div>
+        <div class="field">
+          <label for="sort">Sort by</label>
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="year-asc">Year: oldest first</option>
+            <option value="year-desc">Year: newest first</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+        <div class="filter-actions">
+          <label class="checkbox"><input type="checkbox" id="in-stock"> In stock only</label>
+          <button type="button" class="btn btn-secondary" id="reset-filters">Clear filters</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="listing-heading">
+      <h2 id="listing-heading" class="visually-hidden">Kit listings</h2>
+      <p id="result-count" class="result-count" role="status" aria-live="polite"></p>
+
+      <!-- Product cards are built from data/products.json by js/script.js -->
+      <div class="product-grid" id="product-list" data-static>
+        <!-- Kit cards are written in the HTML so search engines see the images, file names and alt text. js/script.js reads data/products.json and rebuilds them for search, filters and the lightbox. -->
+        <article class="product-card is-visible" data-club="Kaizer Chiefs" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of Kaizer Chiefs 1996 Home">
+            <img src="images/kaizer-chiefs-1996-home-retro-kit.jpg" alt="Kaizer Chiefs 1996 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>Kaizer Chiefs 1996 Home</h3>
+          <p class="card-blurb">Classic Amakhosi home shirt.</p>
+          <p class="card-meta"><span>Size M | R650</span><span class="badge badge-in">In stock</span></p>
+          <a class="card-link" href="enquiry.html?kit=kaizer-chiefs-1996-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="Orlando Pirates" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of Orlando Pirates 1995 Home">
+            <img src="images/orlando-pirates-1995-home-retro-kit.jpg" alt="Orlando Pirates 1995 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>Orlando Pirates 1995 Home</h3>
+          <p class="card-blurb">Vintage Buccaneers black and white.</p>
+          <p class="card-meta"><span>Size L | R650</span><span class="badge badge-low">Last one</span></p>
+          <a class="card-link" href="enquiry.html?kit=orlando-pirates-1995-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="AC Milan" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of AC Milan 1994 Home">
+            <img src="images/ac-milan-1994-home-retro-kit.jpg" alt="AC Milan 1994 home retro football kit" width="400" height="400" loading="eager" decoding="async">
+          </button>
+          <h3>AC Milan 1994 Home</h3>
+          <p class="card-blurb">Iconic Rossoneri European kit.</p>
+          <p class="card-meta"><span>Size M | R850</span><span class="badge badge-low">Last one</span></p>
+          <a class="card-link" href="enquiry.html?kit=ac-milan-1994-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="Manchester United" data-era="2000s">
+          <button type="button" class="card-media" aria-label="View larger image of Manchester United 2008 Home">
+            <img src="images/manchester-united-2008-home-retro-kit.jpg" alt="Manchester United 2008 home retro football kit" width="400" height="400" loading="lazy" decoding="async">
+          </button>
+          <h3>Manchester United 2008 Home</h3>
+          <p class="card-blurb">Champions League winning-season shirt.</p>
+          <p class="card-meta"><span>Size L | R850</span><span class="badge badge-out">Sold out</span></p>
+          <a class="card-link" href="enquiry.html?kit=manchester-united-2008-home">Join the waiting list</a>
+        </article>
+        <article class="product-card is-visible" data-club="Mamelodi Sundowns" data-era="2000s">
+          <button type="button" class="card-media" aria-label="View larger image of Mamelodi Sundowns 2003 Home">
+            <img src="images/mamelodi-sundowns-2003-home-retro-kit.jpg" alt="Mamelodi Sundowns 2003 home retro football kit" width="400" height="400" loading="lazy" decoding="async">
+          </button>
+          <h3>Mamelodi Sundowns 2003 Home</h3>
+          <p class="card-blurb">Masandawana yellow and blue.</p>
+          <p class="card-meta"><span>Size S | R650</span><span class="badge badge-in">In stock</span></p>
+          <a class="card-link" href="enquiry.html?kit=mamelodi-sundowns-2003-home">Enquire about this kit</a>
+        </article>
+        <article class="product-card is-visible" data-club="Barcelona" data-era="1990s">
+          <button type="button" class="card-media" aria-label="View larger image of Barcelona 1992 Home">
+            <img src="images/barcelona-1992-home-retro-kit.jpg" alt="Barcelona 1992 home retro football kit" width="400" height="400" loading="lazy" decoding="async">
+          </button>
+          <h3>Barcelona 1992 Home</h3>
+          <p class="card-blurb">Dream Team era blaugrana.</p>
+          <p class="card-meta"><span>Size M | R900</span><span class="badge badge-low">Last one</span></p>
+          <a class="card-link" href="enquiry.html?kit=barcelona-1992-home">Enquire about this kit</a>
+        </article>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>No kits match your search. Try clearing the filters, or
+        <a href="enquiry.html">send us an enquiry</a> and we'll look for it.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bankai Retro. Johannesburg, South Africa.</p>
+  </footer>
+
+</body>
+</html>
