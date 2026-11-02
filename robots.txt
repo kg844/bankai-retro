@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Replace the address below with your live site address after deploying.
-Sitemap: https://bankairetro.netlify.app/sitemap.xml
+Sitemap: https://bankai-retro.netlify.app/sitemap.xml

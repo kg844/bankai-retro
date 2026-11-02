@@ -127,7 +127,8 @@ link text and image alt text.
 
 **Additional SEO requests**
 - `robots.txt` allows all crawlers and points to the sitemap.
-- `sitemap.xml` lists all 5 pages (Sitemaps.org, n.d.). Update the address in both files once the live URL is known.
+- `sitemap.xml` lists all 5 pages (Sitemaps.org, n.d.). Both files use the live address:
+  https://bankai-retro.netlify.app
 - **Page speed:** fonts load through `<link>` tags with `preconnect` and `display=swap` instead
   of a blocking CSS import, scripts are deferred, images are lazy-loaded, and the map library
   only loads on the Contact page.
@@ -169,8 +170,8 @@ Evidence screenshots for every Part 3 requirement are in `screenshots/` (capture
 | `18-products-without-javascript.png` | Products page with JavaScript turned off: the kit cards, images, file names and alt text all come from the HTML |
 
 ### Repository and deployment
-- GitHub repository: *add repository link here*
-- Live website: *add Netlify or GitHub Pages link here* (free hosting, see RegisterDomain.co.za, 2025)
+- GitHub repository: https://github.com/kg844/bankai-retro
+- Live website: https://bankai-retro.netlify.app (free hosting, see RegisterDomain.co.za, 2025)
 - Run locally with a local server (for example the VS Code Live Server extension), because
   browsers block `fetch` from files opened directly from disk.
 
@@ -224,6 +225,11 @@ changelog records the same edits in more detail.
 | README and changelog (4/5 each) | README now has a Part 3 section, this feedback table and detailed changelog entries for every version. | `README.md` |
 
 ## Changelog
+- **v0.3.3** — Deployment: the GitHub repository and live site links were added to the README,
+  and `robots.txt` and `sitemap.xml` now point at the live address
+  (https://bankai-retro.netlify.app). The Instagram link on the Contact page is now plain
+  text, and the contact form reply explains the "Copy email text" fallback for visitors
+  without a mail app.
 - **v0.3.2** — Part 3 SEO and layout fixes.
   - Wrote the kit cards, with their `<img>` tags, file names and alt text, into `index.html`
     and `products.html`. Before this the images only existed after JavaScript ran, so they were
