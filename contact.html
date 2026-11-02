@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Bankai Retro | Braamfontein and Nasrec Stalls</title>
+  <meta name="description" content="Contact Bankai Retro or visit our Johannesburg market stall in Braamfontein and our FNB Stadium matchday pop-up. Email us or use the contact form.">
+  <meta name="keywords" content="contact Bankai Retro, Braamfontein market retro football kits, FNB Stadium pop-up, Neighbourgoods Market Johannesburg">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:site_name" content="Bankai Retro">
+  <meta property="og:title" content="Contact Bankai Retro | Braamfontein and Nasrec Stalls">
+  <meta property="og:description" content="Contact Bankai Retro or visit our Johannesburg market stall in Braamfontein and our FNB Stadium matchday pop-up. Email us or use the contact form.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Inter:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="contact">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header: contains the logo and the site-wide navigation menu.
+       On small screens js/script.js turns the menu into a toggle button. -->
+  <header>
+    <div class="logo">BANKAI RETRO</div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Get In Touch</h1>
+      <p>Find us online or catch us in person at one of our regular market stalls.</p>
+      <p>Email: <a href="mailto:hello@bankairetro.co.za">hello@bankairetro.co.za</a><br>
+         Instagram: <a href="#">@bankairetro</a><br>
+         Typical response time: within 24&ndash;48 hours.</p>
+    </section>
+
+    <!-- Two locations as required by the brief -->
+    <section class="locations" aria-label="Our locations">
+      <div class="location-card">
+        <h2>Braamfontein Market Stall</h2>
+        <p>Neighbourgoods Market, 73 Juta Street, Braamfontein, Johannesburg<br>
+           Saturdays, 09:00 &ndash; 15:00</p>
+        <button type="button" class="map-btn" data-place="0">Show on map</button>
+      </div>
+      <div class="location-card">
+        <h2>FNB Stadium Matchday Pop-Up</h2>
+        <p>FNB Stadium Grounds, Nasrec, Johannesburg<br>
+           Selected home matchdays only. Check Instagram for dates</p>
+        <button type="button" class="map-btn" data-place="1">Show on map</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="map-heading">
+      <h2 id="map-heading">Find Us</h2>
+      <div id="map" class="map" role="region" aria-label="Map showing our two Johannesburg locations"></div>
+    </section>
+
+    <section aria-labelledby="message-heading">
+      <h2 id="message-heading">Send Us a Message</h2>
+      <p>Fill in the form and we'll put your message into an email addressed to us. Looking for a specific kit
+        or a price? Use the <a href="enquiry.html">enquiry form</a> instead.</p>
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="contact-name">Full name</label>
+          <input id="contact-name" type="text" name="name" required minlength="2" maxlength="60" pattern="[A-Za-z\u00C0-\u024F' \-]+" autocomplete="name" data-label="Full name" data-pattern-message="Use letters, spaces, hyphens and apostrophes only." aria-describedby="contact-name-error">
+          <p class="field-error" id="contact-name-error"></p>
+        </div>
+        <div class="field">
+          <label for="contact-email">Email address</label>
+          <input id="contact-email" type="email" name="email" required maxlength="100" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" autocomplete="email" data-label="Email address" data-pattern-message="Enter a valid email address, e.g. name@example.com." aria-describedby="contact-email-error">
+          <p class="field-error" id="contact-email-error"></p>
+        </div>
+        <div class="field">
+          <label for="contact-phone">Phone number (optional)</label>
+          <input id="contact-phone" type="tel" name="phone" maxlength="20" pattern="(\+27|0)[0-9 ]{9,12}" autocomplete="tel" data-label="Phone number" data-pattern-message="Enter a valid South African number, e.g. 082 123 4567 or +27 82 123 4567." aria-describedby="contact-phone-error">
+          <p class="field-error" id="contact-phone-error"></p>
+        </div>
+        <div class="field">
+          <label for="message-type">Message type</label>
+          <select id="message-type" name="message-type" required data-label="Message type" aria-describedby="message-type-error"><option value="">Choose a message type</option><option value="general">General message</option><option value="feedback">Feedback</option><option value="partnership">Partnership or collaboration</option><option value="stall">Market stall or matchday question</option></select>
+          <p class="field-error" id="message-type-error"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000" placeholder="Type your message here..." data-label="Message" aria-describedby="message-error"></textarea>
+          <p class="field-error" id="message-error"></p>
+        </div>
+        <button type="submit" class="btn">Create Email</button>
+      </form>
+
+      <div id="email-preview" class="response-region" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bankai Retro. Johannesburg, South Africa.</p>
+  </footer>
+
+</body>
+</html>
