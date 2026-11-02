@@ -610,6 +610,9 @@
       actions.appendChild(copy);
       card.appendChild(actions);
 
+      card.appendChild(el('p', 'response-note',
+        'No email app set up? Use "Copy email text" and paste the message into Gmail, Outlook or any other mail service.'));
+
       output.replaceChildren(card);
       output.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'nearest' });
     });

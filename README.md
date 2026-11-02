@@ -165,7 +165,8 @@ Evidence screenshots for every Part 3 requirement are in `screenshots/` (capture
 | `14-seo-title-tags.png` | SEO: `<title>` tag in the page source (Home) |
 | `15-seo-title-tags-products.png` | SEO: unique `<title>` tag on the Products page |
 | `16-seo-meta-description.png` | SEO: meta description in the page source (Enquiry) |
-| `17-seo-images-alt-text.png` | SEO: descriptive image file names, alt text, dimensions and lazy loading |
+| `17-seo-images-alt-text.png` | SEO: the `<img>` tags in the page source, with descriptive file names, alt text, width/height and loading attributes |
+| `18-products-without-javascript.png` | Products page with JavaScript turned off: the kit cards, images, file names and alt text all come from the HTML |
 
 ### Repository and deployment
 - GitHub repository: *add repository link here*
@@ -233,6 +234,8 @@ changelog records the same edits in more detail.
   - Product cards: the price row and enquiry link now line up across each row, even when a kit
     name or description wraps onto two lines.
   - Added a small gap under each page heading.
+  - Evidence screenshots 02–05 and 17 retaken after the card changes, and a JavaScript-off
+    screenshot added (`screenshots/18-products-without-javascript.png`).
 - **v0.3.1** — Part 3 final polish: six generated placeholder kit photos added to `images/`
   (600 × 600 JPEG, file names matching `data/products.json`), 17 evidence screenshots added
   to `screenshots/`, and the Products and Contact page titles shortened.
@@ -289,11 +292,11 @@ FootyCult, 2026. What is Blokecore? The football-fashion trend taking over 2026.
 [Accessed 17 August 2026].
 
 Google, n.d.a. Google Fonts. [Online] Available at: https://fonts.google.com/
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 Google, n.d.b. SEO Starter Guide. [Online] Available at:
 https://developers.google.com/search/docs/fundamentals/seo-starter-guide
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 HOSTAFRICA, 2026. South African SMEs: insights from the HOSTAFRICA SMB Lab. [Online]
 Available at:
@@ -301,41 +304,41 @@ https://hostafrica.co.za/blog/south-africa-2/understanding-small-businesses-in-s
 [Accessed 17 August 2026].
 
 Leaflet, n.d. Leaflet: an open-source JavaScript library for interactive maps. [Online]
-Available at: https://leafletjs.com/ [Accessed 31 October 2026].
+Available at: https://leafletjs.com/ [Accessed 2 November 2026].
 
 MDN Web Docs, n.d.a. Basic concepts of flexbox. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 MDN Web Docs, n.d.b. Client-side form validation. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 MDN Web Docs, n.d.c. CSS grid layout. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 MDN Web Docs, n.d.d. Pseudo-classes. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 MDN Web Docs, n.d.e. Using media queries. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 MDN Web Docs, n.d.f. Using the Fetch API. [Online] Available at:
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-[Accessed 31 October 2026].
+[Accessed 2 November 2026].
 
 OpenStreetMap contributors, n.d. Copyright and licence. [Online] Available at:
-https://www.openstreetmap.org/copyright [Accessed 31 October 2026].
+https://www.openstreetmap.org/copyright [Accessed 2 November 2026].
 
 RegisterDomain.co.za, 2025. Cost of domain registration and hosting in South Africa.
 [Online] Available at: https://www.registerdomain.co.za/blog/domain-hosting-costs-south-africa/
 [Accessed 17 August 2026].
 
 Sitemaps.org, n.d. Sitemaps XML format. [Online] Available at:
-https://www.sitemaps.org/protocol.html [Accessed 31 October 2026].
+https://www.sitemaps.org/protocol.html [Accessed 2 November 2026].
 
 Southtexasnews, 2025. Blokecore style scores big this summer as soccer jerseys
 dominate street fashion. [Online] Available at:
